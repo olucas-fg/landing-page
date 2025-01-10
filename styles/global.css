@@ -32,9 +32,18 @@
   --fs-lg: 1.25rem;
   --fs-xl: 1.5rem;
   --fs-2xl: 2.5rem;
+
+  --px-lg: 1.5rem;
+  /*padding eixo x*/
+
+  /* padding eixo y */
+  --py-base: 1rem;
+  --py-lg: 1.5rem;
+  --py-xl: 3rem;
+
 }
 
-html{
+html {
   font-family: var(--ff-sans);
   font-weight: var(--fw-base);
   font-size: var(--fs-base);
@@ -42,43 +51,54 @@ html{
   color: var(--text-color-primary);
 }
 
-body{
+body {
   background-color: var(--bg-color);
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
   line-height: 1.2;
   color: var(--text-color-primary);
   font-weight: var(--fw-bold);
   letter-spacing: -0.04em;
 }
 
-h1{
+h1 {
   font-size: var(--fs-2xl);
 }
 
-h2{
+h2 {
   font-size: var(--fs-xl);
 }
 
-h3{
+h3 {
   font-size: var(--fs-lg);
 }
 
-@media (width >= 80em){
+@media (width >=80em) {
+
   /* 80 * 16 = 1280px (desktop) */
-  :root{
+  :root {
     --fs-lg: 2rem;
     --fs-xl: 3rem;
     --fs-2xl: 4rem;
+
+    --px-lg: 2rem;
+    /*padding no eixo x*/
+
+    /* padding eixo y */
+    --py-base: 1.5rem;
+    --py-lg: 2.5rem;
+    --py-xl: 5rem;
   }
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
 
-ul [role="list"]{
+ul [role="list"] {
   list-style: none;
 }
